@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nicolas Lagos, estudiante de Técnico Universitario en Informática. Muestra proyectos en desarrollo web y habilidades en HTML5, CSS3, JavaScript, y React.js." />
+  <meta name="robots" content="index, follow" />
+  <title>Blog</title>
+
+  <!-- SEO y Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nicolas Lagos",
+    "jobTitle": "Desarrollador Web",
+    "url": "https://www.ejemplo.com",
+    "image": "https://www.ejemplo.com/imagen.jpg",
+    "description": "Estudiante de Técnico Universitario en Informática con pasión por el diseño web y desarrollo frontend."
+  }
+  </script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../blog/assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header class="text-center py-3">
+    <a href="#home">
+      <img src="https://implyingrigged.info/w/images/thumb/3/34/Vocaloid_logo.png/250px-Vocaloid_logo.png" alt="Logo Vocaloid" />
+    </a>
+  </header>
+
+  <nav class="py-3">
+    <ul class="list-inline text-center m-0">
+      <li class="list-inline-item mx-3"><a href="#writing">Escribe tu propia noticia</a></li>
+      <li class="list-inline-item mx-3"><a href="#last">Lo último</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección de últimas noticias -->
+  <section id="last" class="container text-center my-5">
+    <div class="row" id="noticiasContainer">
+      <!-- Noticias generadas por JS se insertarán aquí -->
+    </div>
+  </section>
+
+  <!-- Sección para escribir una noticia -->
+  <section id="writing" class="my-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Escribe tu propia noticia!</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="noticiaForm" novalidate>
+            <div class="mb-3">
+              <label for="titulo" class="form-label">Título</label>
+              <input type="text" class="form-control" id="titulo" name="titulo" placeholder="El título" required minlength="5" maxlength="100" />
+            </div>
+            <div class="mb-3">
+              <label for="contenido" class="form-label">Contenido</label>
+              <textarea class="form-control" id="contenido" name="contenido" rows="4" placeholder="Escribe tu noticia..." required minlength="20" maxlength="1000"></textarea>
+            </div>
+            <div class="text-center">
+              <input class="btn btn-primary" type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (puedes completarlo si lo necesitas) -->
+  <footer class="text-center py-4 bg-light">
+    <small>&copy; 2025 Nicolas Lagos. Todos los derechos reservados.</small>
+  </footer>
+
+  <!-- Scripts JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../blog/assets/js/script.js" defer></script>
+  <script src="../blog/assets/js/cargarNoticias.js" defer></script>
+  <script src="../blog/assets/js/eliminarNoticia.js" defer></script>
+</body>
+</html>

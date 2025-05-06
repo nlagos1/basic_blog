@@ -1,0 +1,127 @@
+:root{
+    --bg-color: linear-gradient(to right,rgb(77, 84, 100), rgb(128, 216, 229));
+    --second-bg-color: linear-gradient(to right,  rgb(128, 216, 229), rgb(11, 2, 67));
+    --main-color: rgb(11, 2, 67);
+    --second-color: white;
+    --text-color: white;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(77, 84, 100), rgb(128, 216, 229));
+}
+
+header{
+    text-align: center;
+}
+header img{
+    width: 10%;
+    height: 10%;
+}
+
+nav {
+    padding: 1%;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: rgb(45, 51, 62);
+  }
+
+  @media (max-width:995px){
+    .navbar{
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 40%;
+      border-left: 3px solid var(--main-color);
+      border-bottom: 3px solid var(--main-color);
+      border-bottom-left-radius: 2rem;
+      border-top: 0.1rem solid;
+      display: none;
+    }
+  }
+
+  #last {
+    padding: 60px 0;
+  }
+  
+  #last h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #212529;
+  }
+  
+  #last .card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #last .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  #last .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+  }
+  
+  #last .card-body {
+    padding: 20px;
+
+  }
+  
+  #last .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #343a40;
+  }
+  
+  #last .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  #last .btn-primary,
+  #writing .btn-primary {
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #last .btn-primary {
+    padding: 10px 24px;
+  }
+  
+  #last .btn-primary:hover,
+  #writing .btn-primary:hover {
+    background-color: #0b5ed7;
+  }
